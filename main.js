@@ -29,7 +29,7 @@ if (localStorage.getItem('date')){
   div.style.borderRadius = '10px';
   div.textContent = 'Вы уже потратили все свои попытки приходите завтра';
   div.style.paddingTop = '15vh';
-  document.body.appendChild(div)
+  document.body.appendChild(div);
 }
 
 
@@ -97,7 +97,7 @@ for (let x = 0; x < btns.length; x++) {
     }, 2000)
   })
 }
-
+if (btns[x].disabled = true){
 let day = new Date().getDate();
-
 localStorage.setItem('date', day);
+}
